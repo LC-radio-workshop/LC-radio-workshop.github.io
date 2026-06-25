@@ -42,7 +42,7 @@ The aim of this week is to bridge those gaps: to agree on shared data convention
 
     [:octicons-arrow-right-24: View the requirements](requirements.md)
 
-- :material-notebook-outline:{ .lg .middle } **Examples**
+- :material-notebook-outline:{ .lg .middle } **Example Notebooks**
 
     ---
 
