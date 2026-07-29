@@ -204,6 +204,7 @@ The container should support the following as native methods that preserve the c
 ---
 
 ## 5. A note on layering
+
 The user wish list mixes container level features (slicing, cropping, plotting, masking) with scientific analysis features (drift fitting, fluence calculation, periodicity detection). When implementing, these should be kept separate:
 
 * **The container** holds the data and metadata and provides the basic operations described in section 4. Its scope is finite and well defined.

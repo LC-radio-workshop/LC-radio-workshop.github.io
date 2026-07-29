@@ -11,7 +11,7 @@ The most important message of this guide: **use a loader.** There are several ma
 For most heliospheric radio data, one of these four packages will read what you need:
 
 | Loader | What it's good for |
-|---|---|
+| --- | --- |
 | [`radiospectra`](https://docs.sunpy.org/projects/radiospectra/) | SunPy affiliated package. Good first choice for solar radio data. Handles e-CALLISTO, SWAVES, RFS (PSP), WAVES (Wind), Learmonth (RSTN) and more. Integrates with Fido for search and download. |
 | [`MASER (maser4py)`](https://maser.readthedocs.io/) | Strong on space mission radio data. Covers Cassini, Juno, Solar Orbiter/RPW, STEREO/WAVES, Wind/WAVES, Nançay instruments. Uses xarray under the hood. |
 | [`pyspedas`](https://pyspedas.readthedocs.io/) | Good for multi spacecraft work. Pulls data from many space missions in one consistent way via CDAWeb. |
