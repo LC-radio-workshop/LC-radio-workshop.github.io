@@ -30,4 +30,3 @@ Organisers and contributors to the workshop.
 - **Sophie Musset**
 - **Will Barnes**
 - **Xavier Bonnin**
-

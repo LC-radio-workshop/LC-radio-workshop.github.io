@@ -32,5 +32,9 @@ ignore-words-list = """
     HiRES,
     NetCDF,
     netCDF,
-    netcdf
+    netcdf,
+    facilites,
+    archiv,
+    technik,
+    partically
 """

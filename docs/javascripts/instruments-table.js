@@ -85,7 +85,7 @@ async function loadInstrumentsTable(wrapper) {
   try {
     const response = await fetch(csvUrl, { cache: "no-store" });
     if (!response.ok) {
-      throw new Error(`Google Sheets returned ${response.status}`);
+      throw new Error(`Failed to load instrument catalogue CSV ${response.status}`);
     }
 
     const csvText = await response.text();
@@ -166,26 +166,6 @@ function enhanceInstrumentsTable() {
     });
   });
 
-  // Font-size slider injected above the table, persisted in localStorage.
-  const FONT_KEY = "instruments-font-size";
-  const savedSize = parseInt(localStorage.getItem(FONT_KEY) || "14", 10);
-  wrapper.style.fontSize = savedSize + "px";
-
-  const controls = document.createElement("div");
-  controls.className = "instruments-controls";
-  controls.innerHTML = `
-    <label for="font-size-slider">Text size: <span id="font-size-value">${savedSize}</span>px</label>
-    <input id="font-size-slider" type="range" min="10" max="20" step="1" value="${savedSize}">
-  `;
-  wrapper.insertAdjacentElement("beforebegin", controls);
-
-  controls.querySelector("#font-size-slider").addEventListener("input", e => {
-    const size = e.target.value;
-    wrapper.style.fontSize = size + "px";
-    controls.querySelector("#font-size-value").textContent = size;
-    localStorage.setItem(FONT_KEY, size);
-  });
-
   // Initialise Simple-DataTables.
   if (typeof simpleDatatables !== "undefined") {
     new simpleDatatables.DataTable(table, {
@@ -195,7 +175,7 @@ function enhanceInstrumentsTable() {
       perPageSelect: [10, 25, 50, 100],
       labels: {
         placeholder: "Search the catalogue…",
-        perPage: "{select} entries per page",
+        perPage: " entries per page",
         noRows: "No instruments match the search",
         info: "Showing {start} to {end} of {rows} instruments",
       },
