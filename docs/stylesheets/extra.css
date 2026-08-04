@@ -43,10 +43,13 @@
   color: var(--md-typeset-color);
 }
 
-/* Hide left navigation sidebar; let content fill the space */
-.md-sidebar--primary {
-  display: none;
+/* This should hide the nav bar on a monitor wide enough for the content to fill but work on smaller screens */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
 }
+
 .md-main .md-main__inner {
   justify-content: center;
 }
