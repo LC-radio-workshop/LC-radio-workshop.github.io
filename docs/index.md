@@ -1,4 +1,4 @@
-# Bridging Gaps in Heliospheric Radio Data Analyses
+# **Bridging Gaps in Heliospheric Radio Data Analyses**
 
 Welcome to the documentation site for the Lorentz Center workshop **["Bridging Gaps in Heliospheric Radio Data Analyses"](https://www.lorentzcenter.nl/bridging-gaps-in-heliospheric-radio-data-analyses.html)**, held in Leiden, the Netherlands, **18-22 May 2026**.
 
@@ -6,7 +6,7 @@ This site collects working notes, an instrument catalogue, tooling specification
 
 This site will not be regularly updated into the future, think of this as a record of the outputs of the workshop, however it can be updated and maintained by the community through the [github repo](https://github.com/LC-radio-workshop/LC-radio-workshop.github.io). Please open an issue or a pull request.
 
-## About the workshop
+## **About the workshop**
 
 Heliospheric radio observations span an enormous range of frequencies, instruments, and data formats.
 They come from ground-based arrays like LOFAR and e-CALLISTO, and from space-based receivers on Solar Orbiter, Parker Solar Probe, Wind, and STEREO.
@@ -14,7 +14,7 @@ Each mission and instrument team has built its own analysis tools and convention
 
 The aim of this week is to bridge those gaps: to agree on shared data conventions, prototype interoperable tooling, and lay the groundwork for a community container that lets anyone load a solar radio burst from any of these instruments with the same handful of calls.
 
-## What's in this site
+## **What's in this site**
 
 <div class="grid cards" markdown>
 
@@ -58,9 +58,17 @@ The aim of this week is to bridge those gaps: to agree on shared data convention
 
     [:octicons-arrow-right-24: Go to the workshop](workshop/schedule.md)
 
+- :material-chat:{ .lg .middle } **Chatroom**
+
+    ---
+
+    Interested in contributing or collaborating? Join us in our Matrix chatroom!
+
+    [:octicons-arrow-right-24: Join the chatroom here](https://matrix.to/#/%23lc-radio-workshop-community-space:matrix.org)
+
 </div>
 
-## Links
+## **Links**
 
 - [GitHub organisation](https://github.com/LC-radio-workshop)
 - [Source for this site](https://github.com/LC-radio-workshop/LC-radio-workshop.github.io)
